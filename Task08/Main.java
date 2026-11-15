@@ -3,14 +3,14 @@ class Vehicle {
     Vehicle(String registrationNo) {
         this.registrationNo = registrationNo;
     }
-    // Method overloading
+    
     double calculateFee(int hours) {
         return hours * 30.0;
     }
     double calculateFee(int hours, double rate) {
         return hours * rate;
     }
-    // Method to be overridden
+   
     double getParkingFee() {
         return 50.0;
     }
